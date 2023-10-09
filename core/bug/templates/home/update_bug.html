@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block start %}
+<div class="input-container mt-5">
+    <h2>Update Bug to the Database</h2>
+    <form class="col-9 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="bugTitle">Bug Title:</label>
+       <input type="text" id="bugTitle" value="{{ home.bugTitle }}" name="bugTitle" required>
+
+        <label for="bugDescription">Bug Description:</label>
+        <textarea id="bugDescription" name="bugDescription" value="" rows="4" required>{{ home.bugDescription }}</textarea>
+
+        <label for="Tag">Tag:</label>
+        <input type="text" id="Tag" name="tag" value="{{ home.tag }}" required>
+
+        <label for="Subscribers">Subscribers:</label>
+        <input type="text" id="Subscribers" value="{{ home.subscribers }}" name="subscribers" required>
+
+        <label for="Assign_to">Assign_to:</label>
+        <input type="text" id="Assign_to" name="assign_to" value="{{ home.assign_to }}" required>
+
+        <button class="btn" type="submit">Update Bug</button>
+    </form>
+</div>
+
+
+{% endblock %}
+

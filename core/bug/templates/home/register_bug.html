@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block start %}
+<div class="input-container mt-5">
+    <h2>Add a Bug</h2>
+    <form class="col-9 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="bugTitle">Bug Title:</label>
+       <input type="text" id="bugTitle" name="bugTitle" required>
+
+        <label for="bugDescription">Bug Description:</label>
+        <textarea id="bugDescription" name="bugDescription" rows="4" required></textarea>
+
+        <label for="Tag">Tag:</label>
+        <input type="text" id="Tag" name="tag" required>
+
+        <label for="Subscribers">Subscribers:</label>
+        <input type="text" id="Subscribers" name="subscribers" required>
+
+        <label for="Assign_to">Assign_to:</label>
+        <input type="text" id="Assign_to" name="assign_to" required>
+        <br>
+        <button class="btn" type="submit">Submit Bug</button>
+</form>
+
+</div>
+
+{% endblock %}
+
