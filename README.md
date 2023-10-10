@@ -1,4 +1,3 @@
-# CapX
 
 # Project Title: Bug Management Dashboard
 
@@ -6,13 +5,28 @@ Bug management dashboard is developed as part of the [microtasks](https://phabri
 
 ## Features
 
-- **User Authentication**: Access to the dashboard is limited to registered and authenticated users. A username and password are required for login.
+- **User Authentication**: Adding new bug feature is limited to registered and authenticated users. A username and password are required for login.
 
-- **Leaderboard**: A list of users who have resolved the most bugs is displayed, fostering a friendly competition amongst users.
+![image](https://github.com/axif0/CapX/assets/66010854/080b6088-1af7-4ce0-b50f-bdc3911c2562)
 
-- **Add New Bug**: New bugs encountered can be reported by users. Details about the bug, including its description, severity, and steps to reproduce it, can be added.
+![image](https://github.com/axif0/CapX/assets/66010854/21100033-ddcd-4677-949c-d743218d967d)
 
-- **Find All Bugs**: All reported bugs are listed. This list can be browsed to understand the current issues.
+Beside adding new bugs, one can check Leaderboard and Find all bug page without logging in.
+
+
+- **Leaderboard**: A list of users who have created the most bugs is displayed, showing a friendly competition amongst users.
+
+![image](https://github.com/axif0/CapX/assets/66010854/8683dab0-11c2-46c9-abe1-9a73460475dc)
+
+
+- **Add New Bug**: New bugs encountered can be reported by users. Details about the bug, including its description, tags, Subscribers and to whom the bug is Assigned to can be added.
+
+![image](https://github.com/axif0/CapX/assets/66010854/bb3d0193-ba52-4e7d-9210-d9fedfa3d7ae)
+
+
+- **Find All Bugs**: All reported bugs are listed. This list can be browsed to understand the current issues. Here the bugs can be updated or deleted.
+![image](https://github.com/axif0/CapX/assets/66010854/ac437818-696f-428a-9b03-4ef82804c342)
+
 
 ## Setup
 
@@ -54,10 +68,6 @@ python manage.py runserver
 
 Now, `http://localhost:8000` should be navigated to in the browser to view the project.
 
-## Screenshots
-
-Screenshots of the features are provided for a better understanding of the project. They should be referred to while exploring the project.
-
 ## Contributions
 
 The tasks completed for this project are as follows:
@@ -69,7 +79,7 @@ The tasks completed for this project are as follows:
 
 ## Acknowledgements
 
-This project was developed as part of the Wikimedia microtasks assigned on Phabricator. The tasks were aimed at getting familiar with the basic structure of the development of the Capacity Exchange platform. The project has been committed to GitHub as per the guidelines provided in the tasks [stackoverflow.com](https://phabricator.wikimedia.org/T347253), [markdown.land](https://phabricator.wikimedia.org/T347255).
+This project was developed as part of the Wikimedia microtasks assigned on Phabricator. The tasks were aimed at getting familiar with the basic structure of the development of the Capacity Exchange platform. The project has been committed to GitHub as per the guidelines provided in the tasks.
 
 ## License
 
